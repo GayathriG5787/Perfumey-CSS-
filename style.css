@@ -1,0 +1,128 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color for contrast */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 15px 30px; /* Increased padding for better spacing */
+    background: rgba(30, 30, 30, 0.9); /* Dark semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+.navbar h1 {
+    color: white; /* Title color */
+    font-size: 24px; /* Font size for the title */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 20px; /* Space between list items */
+}
+
+nav li {
+    color: gray;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav li:hover {
+    color: white; /* Change color on hover */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Search Bar Styles */
+.searchbar {
+    padding: 50px;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    padding: 15px;
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Light background for input */
+    color: #e0e0e0; /* Light text color */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow */
+}
+
+input::placeholder {
+    color: #b0b0b0; /* Placeholder text color */
+}
+
+input:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect on focus */
+}
+
+/* Product Box Styles */
+.products {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between product boxes */
+    padding: 20px; /* Padding around products */
+}
+
+.box {
+    border: solid rgba(255, 255, 255, 0.1) 1px; /* Light border for subtlety */
+    width: 220px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Slightly opaque background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover */
+}
+
+.box img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Rounded corners on top */
+}
+
+.box p {
+    padding: 10px; /* Padding for text */
+    font-size: 14px; /* Font size for description */
+    color: #ccc; /* Light gray for text */
+}
+
+/* Hover Effect for Product Boxes */
+.box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Darker background on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(30, 30, 30, 0.9); /* Dark background */
+    color: white; /* White text */
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center text in footer */
+}
+
+footer h2 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+footer p {
+    margin: 5px 0; /* Space between paragraphs */
+}
